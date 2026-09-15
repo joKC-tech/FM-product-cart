@@ -1,0 +1,127 @@
+main {
+  max-width: 90%;
+  margin: 0 auto;
+  padding-block: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  @media (min-width: 64rem) {
+    flex-direction: row;
+    max-width: 100rem;
+    padding-inline: 1rem;
+    gap: 3rem
+  }
+}
+
+.l-products-section {
+    @media (min-width: 64rem) {
+      flex-grow: 2;
+      flex-basis: 66.666667%;
+    }
+}
+
+.c-h1 {
+    color: var(--color-rose-900);
+    font-size: 2.5rem;
+    @media (min-width: 48rem){
+      margin-block-end: 2rem;
+    }
+}
+
+.l-products-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @media (min-width: 48rem) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  };
+
+  @media (min-width: 64rem) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+
+/* Cart Component */
+
+.c-cart {
+  background-color: var(--color-rose-50);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+
+
+    @media (min-width: 64rem) {
+        flex-basis: 33.333333%;
+        flex-grow: 1;
+        align-self: flex-start;
+    }
+}
+
+.c-cart__h2 {
+  color: var(--color-red);
+  font-weight: 700;
+}
+
+.c-cart__empty-cart {
+  color: var(--color-rose-500);
+  font-weight: 600;
+  text-align: center;
+  font-size: .75rem;
+  padding-block: 2rem;
+}
+
+.c-cart__illustration {
+  width: 50%
+}
+
+
+.c-cart__total-label {
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1.5rem;
+  color: var( --color-rose-900);
+  font-size: .9rem;
+}
+
+.c-cart__total {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.c-cart__carbon-neutral {
+  display: flex;
+  align-items: center;
+  gap:.5rem;
+  font-size: .9rem;
+  font-weight: 400;
+  background-color: var(--color-rose-100);
+  padding: 1em 1.25em;
+  border-radius: .25rem;
+
+  b {
+    font-weight: 600;
+  }
+
+  img {
+    width:1.5rem
+  }
+
+}
+
+.c-cart__btn {
+  background-color: var(--color-red);
+  color: var(--color-rose-50);
+  border: none;
+  border-radius: 5rem;
+  padding: 1em;
+  font-size: 1rem;
+  margin-block-start: 1.5rem;
+  cursor: pointer;
+}
